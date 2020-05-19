@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+.contact-title {
+    margin: 0 auto;
+    font-size: 30px;
+    align-content: center;
+    padding: 10px;
+    padding-top: 4%;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #c94444;
+}
+.form-container {
+    width: 100%;
+    text-align: center;
+}
+form {
+    margin-top: 40px;
+    transition: all 4s ease-in-out;
+}
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input {
+    height: 30px;
+}
+
+form .submit {
+    background: #c94444;
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+form .submit:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+
+/* mobile version */
+
+@media (max-width: 500px){
+    .nav_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 1.5em;
+        line-height: 2rem;
+    }
+        .nav_menu a {
+            text-align: center;
+            margin-top: 5px;
+            padding-top: 5px;
+        }
+    
+    .form-control {
+        width: 400px;
+        margin: 0 auto;
+    }
+            input {
+            height: 35px;
+        }
+        
+    form .submit {
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        margin-bottom: 60px;;
+            
+    }
+    form .submit:hover {
+        background-color: lightskyblue;
+        color: black;
+    }
+}
